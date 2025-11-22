@@ -11,7 +11,6 @@ A full-stack web application designed to help students and staff report lost ite
 **Version Control:** Git + GitHub
 
 **System Overview**
-
 The Lost & Found Portal allows users to:
 
 Submit reports for lost items
@@ -24,7 +23,35 @@ Track item status (lost, found, claimed)
 /backend-java       → Java backend logic (Eclipse)
 /node-server        → Node.js API server (VS Code)
 /frontend-react     → React user interface (VS Code)
-/docs               → Documentation, diagrams, notes
+/docs               → Documentation
+
+Access Model (Prototype Explanation)
+
+The Lost & Found Portal works like a public notice board:
+
+    • Anyone may report a lost item
+
+    • Anyone may report a found item
+
+    • Anyone may view all items
+
+During reporting, users must provide:
+
+A contact name, and
+
+A contact phone number,
+which creates a natural layer of accountability.
+
+Currently, the “Mark as claimed” action is open for demonstration purposes.
+In a real deployment, only staff (e.g., Security Office or Dean’s Office) would have access to this action.
+
+Future Enhancements
+
+    • User authentication (Admin/Staff login)
+      
+    • Role-based access control
+      
+    • History logs for reported and claimed items
 
 **Author**
 **Muganzi Alexander** – Bugema University
